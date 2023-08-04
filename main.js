@@ -1,5 +1,6 @@
 let btn = document.querySelector(".btn");
 let robot = document.querySelector(".robot");
+let play = document.getElementById("play");
 
 btn.addEventListener("click" , function(){
     if(robot.classList.contains("hide")){
@@ -12,3 +13,9 @@ btn.addEventListener("click" , function(){
         console.log("Hide");
     }
 })
+
+function playMusic(){
+    let audio = new Audio("files/effect.mp3");
+    audio.play()
+}
+play.addEventListener("click" , playMusic)

@@ -35,6 +35,15 @@ body {
 .hide {
     opacity: 0;
 }
+.effect {
+    display: none;
+    width: 1px;
+    height: 1px;
+    border: none;
+    background-color: transparent;
+    color: transparent;
+    opacity: 0;
+}
 
 @media(max-width:800px){
     .btn {
